@@ -1,14 +1,20 @@
-# Eye Motion Tracking 
+# Proctoring base
 
 ## Overview 
 
-### About Eye Motion Tracking
-I used Dlib and OpenCV libraries to take the information from the webcam, then use the [Landmark Points](docs/landmark_points.jpg) from the Dlib to examine if the eye is closed or open (Eye-blinking) and whether the user is looking at the center, left or right.
+This is a base for functions in proctoring application with purpose for prevent students from cheating during online test. 
+
+## Analysis: 
+From the original problem: preventing candidates from cheating, I split it it to smaller problems: 
+
+1. [Eye-blinking](docs/Eye_blinking/)
+2. [Eye-gazing](docs/Eye_gazing/)
+3. [Mouth-opening](docs/Mouth_opening/)
+4. 
 
 
-## Process 
-1. Use CV and Dlib to read the image from the camera
-2. 
+
+
 
 ## Installation
 1. Deactivate your current environment 
@@ -32,3 +38,11 @@ conda activate eye-motion-tracking
 ```
 python -m pip install https://files.pythonhosted.org/packages/0e/ce/f8a3cff33ac03a8219768f0694c5d703c8e037e6aba2e865f9bae22ed63c/dlib-19.8.1-cp36-cp36m-win_amd64.whl#sha256=794994fa2c54e7776659fddb148363a5556468a6d5d46be8dad311722d54bfcf
 ```
+6. Run the [function_name+main].py
+```
+python [function_name+main].py
+```
+
+## License
+
+This project is under the MIT License. 

@@ -8,7 +8,7 @@
 #    conda env remove --name tracking-barbell-exercises
 #    conda env list
 
-name: eye-motion-tracking
+name: proctoring-base
 channels:
   - anaconda
   - conda-forge
@@ -20,9 +20,11 @@ dependencies:
   - pip:
       - numpy==1.17.4
       - opencv-python==4.0.0.21
-      # - pandas==1.5.2
-      # - ipykernel==6.17.1
-      # - ipython==8.7.0
-      # - jupyter-client==7.4.7
-      # - jupyter-core==5.1.0
-      # - matplotlib==3.6.2
+      - imutils
+      - scipy
+      - ipykernel==5.4.2
+      - ipython==7.10.0
+      - jupyter-client==6.1.10
+      - opencv-python==3.4.2.16
+
+
