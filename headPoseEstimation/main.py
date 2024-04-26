@@ -57,31 +57,17 @@ while True:
             else:
                 text = "On screen"
 
-            # ----------------------- Display the nose direction ---------------------------
-            # nose_3d_projection, jacobian = cv2.projectPoints(nose_3d, rot_vec, trans_vec, cam_matrix, dist_matrix)
-            #
-            # p1 = (int(nose_2d[0]), int(nose_2d[1]))
-            # p2 = (int(nose_2d[0] + y*10), int(nose_2d[1] - x*10))
-
-            # cv2.line(img, p1, p2, (255, 0, 0), 3)
-
-            # Add the text on the frame
+            # ---------------- Add the text on the frame -------------------
             cv2.putText(frame, text, (20, 50), font, 2, (0, 255, 0), 2)
 
-        # ----------------------- Drawing landmarks ----------------------
-        # mp_drawing.draw_landmarks(
-        #     image=img,
-        #     landmark_list=face_landmarks,
-        #     connections=mp_face_mesh.FACEMESH_CONTOURS,
-        #     landmark_drawing_spec=drawing_spec,
-        #     connection_drawing_spec=drawing_spec
-        # )
-
+    # ------------------- Show the image -----------------
     cv2.imshow("Image", frame)
 
+    # ------------- Breaking when entering ESC key -------------
     key = cv2.waitKey(1)
     if key == 27:
         break
 
+# -------------- Exit ------------------
 cv2.destroyAllWindows()
 cap.release()

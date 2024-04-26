@@ -1,0 +1,4 @@
+__pycache__
+.idea
+yolov8n.pt
+yolov8Train.pt
