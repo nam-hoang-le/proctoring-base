@@ -1,48 +1,69 @@
-# Proctoring base
+# Proctoring Base
 
-## Overview 
+## Overview: 
 
-This is a base for functions in proctoring application with purpose for prevent students from cheating during online test. 
+This is the repository solutions for challenge from George Washington Institute for Data Science & AI.
 
-## Analysis: 
-From the original problem: preventing candidates from cheating, I split it it to smaller problems: 
+The challenge requires me to prove skills in creating functions/models for AI Proctoring systems. 
 
-1. [Eye-blinking](docs/Eye_blinking/Eye_blinking.md)
-2. [Eye-gazing](docs/Eye_gazing/Eye_gazing.md)
-3. [Mouth-opening](docs/Mouth_opening/Mouth_opening.md)
-4. 
+AI Proctoring, in simple understanding, is a system using AI techniques to support managing the online examination to ensure that participants do the examination with permitted behaviors. 
 
 
+## Analysis:
+From the challenge, I created different functions corresponding with detailed documents containing the problem and solutions for each of them: 
+
+1. [Eye Blinking](docs/eyeBlinking/eyeBlinking.md)
+2. [Eye Gazing](docs/eyeGazing/eyeGazing.md)
+3. [Mouth Opening](docs/mouthOpening/mouthOpening.md)
+4. [Head Pose](docs/headPoseEstimation/headPoseEstimation.md)
+5. [Optical Character Recognition](docs/opticalCharacterRecognition/opticalCharacterRecognition.md)
+6. [Mask Detector](docs/maskDetector/maskDetector.md)
+7. [Spoofing Detection](docs/spoofingDetection/spoofingDetection.md)
 
 
 
 ## Installation
-1. Deactivate your current environment 
+1. Install important packages:
 ```
-conda deactivate 
+pip install -r requirements.txt 
 ```
-2. Create a new environment and download the prerequisite
+2. Run every functions: 
+- For Eye Blinking:
 ```
-conda env create -f environment.yml
+cd eyeBlinking 
+python main.py
 ```
-
-3. Check the environment list: 
+- For Eye Gazing:
 ```
-conda env list
+cd eyeGazing 
+python mainHor.py
+python mainVer.py
 ```
-4. Activate the environment (make sure the name of the environment is correct): 
+- For Head Pose Estimation:
 ```
-conda activate eye-motion-tracking
+cd headPoseEstimation 
+python main.py
 ```
-5. Download Dlib library (Or you can copy the download link in [this website](https://pypi.org/simple/dlib/)):
-```
-python -m pip install https://files.pythonhosted.org/packages/0e/ce/f8a3cff33ac03a8219768f0694c5d703c8e037e6aba2e865f9bae22ed63c/dlib-19.8.1-cp36-cp36m-win_amd64.whl#sha256=794994fa2c54e7776659fddb148363a5556468a6d5d46be8dad311722d54bfcf
-```
-6. Run the [function_name+main].py
-```
-python [function_name+main].py
+- For Mask Detector:
 ```
 
+```
+- For Mouth Opening:
+```
+cd mouthOpening 
+python main.py
+```
+- For Spoofing Detection: 
+```
+cd spoofingDetection 
+python main.py
+```
 ## License
 
-This project is under the MIT License. 
+The code in this repository is licensed under the AGPL 3.0 unless otherwise noted.
+
+Please see LICENSE for details.
+
+## Contact 
+
+Please contact me through lenam1072004@gmail.com

@@ -3,12 +3,6 @@ import cv2
 
 def headPoseEstimation(face_landmarks, face_2d, face_3d, iw, ih):
     for idx, lm in enumerate(face_landmarks.landmark):
-        # ---------------------- Get the points of the face -----------------------------
-        # if idx == 33 or idx == 263 or idx == 1 or idx == 61 or idx == 291 or idx == 199:
-        # # ----------- Draw a line in the nose --------------------
-        # nose_2d = (lm.x * iw, lm.y * ih)
-        # nose_3d = (lm.x * iw, lm.y * ih, lm.z * 3000)
-
         # ------------------ Convert to other points ------------------
         x, y = int(lm.x * iw), int(lm.y * ih)
 
@@ -42,5 +36,4 @@ def headPoseEstimation(face_landmarks, face_2d, face_3d, iw, ih):
     # --------------------- Get y rotation degrees ------------------
     x = angles[0] * 360
     y = angles[1] * 360
-    # z = angles[2] * 360
     return x, y, face_2d, face_3d

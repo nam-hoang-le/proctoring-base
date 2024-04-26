@@ -1,5 +1,5 @@
 # import the necessary packages
-from mouth_opening import mouth_aspect_ratio
+from mouthOpening import mouthAspectRatio
 from imutils import face_utils
 import numpy as np
 import dlib
@@ -14,11 +14,10 @@ font = cv2.FONT_HERSHEY_PLAIN
 
 # ------------------ Get the face detector -------------------
 detector = dlib.get_frontal_face_detector()
-predictor = dlib.shape_predictor("face_landmarks.dat")
+predictor = dlib.shape_predictor("data/faceLandmarks.dat")
 
 # ---------------------- Choose the webcam ---------------------------
 cap = cv2.VideoCapture(0)
-
 
 # -------------------- Loop the program ----------------------------
 while True:
@@ -43,7 +42,7 @@ while True:
         mouth_points = shape[mStart:mEnd]
 
         # --------------- Take the mouth ratio --------------------
-        mouth_ratio = mouth_aspect_ratio(mouth_points)
+        mouth_ratio = mouthAspectRatio(mouth_points)
         
         
         # ----------------- Draw text if mouth is open --------------------
