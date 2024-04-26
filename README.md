@@ -7,9 +7,9 @@ This is a base for functions in proctoring application with purpose for prevent 
 ## Analysis: 
 From the original problem: preventing candidates from cheating, I split it it to smaller problems: 
 
-1. [Eye-blinking](docs/Eye_blinking/)
-2. [Eye-gazing](docs/Eye_gazing/)
-3. [Mouth-opening](docs/Mouth_opening/)
+1. [Eye-blinking](docs/Eye_blinking/Eye_blinking.md)
+2. [Eye-gazing](docs/Eye_gazing/Eye_gazing.md)
+3. [Mouth-opening](docs/Mouth_opening/Mouth_opening.md)
 4. 
 
 
