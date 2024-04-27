@@ -16,9 +16,12 @@ Extract words from image, then store it in the folder.
 
 ## How-to-do
 
-**Step 1:** I call the library, take information from them 
+**Step 1:** 
+I call the library, take information from them 
 
-**Step 2:** I stored the information in the *information* folder with file name is the current time exchange. 
+**Step 2:** 
+
+I stored the information in the *information* folder with file name is the current time exchange. 
 
 
 

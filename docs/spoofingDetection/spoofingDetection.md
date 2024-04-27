@@ -49,6 +49,7 @@ Due to my lack of computation on my Laptop, I trained on Google Colab, here are 
 - Patience = 25 
 
 **Step 5**: Testing 
+
 Unfortunately, I can't upload the whole model on to GitHub. You can contact me by email lenam1072004@gmail.com to get the weights of the model. 
 
 **Results** 
