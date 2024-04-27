@@ -12,7 +12,7 @@ Recognize whenever they do that.
 
 Use the dlib library to detect 68 different landmarks on the candidates face. 
 
-![Facial_Landmarks](../68_facial_landmarks.png)
+![Facial_Landmarks](68_facial_landmarks.png)
 
 ### Step 2: 
 
