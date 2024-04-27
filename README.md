@@ -19,7 +19,7 @@ From the challenge, I created different functions corresponding with detailed do
 5. [Optical Character Recognition](docs/opticalCharacterRecognition/opticalCharacterRecognition.md)
 6. [Spoofing Detection](docs/spoofingDetection/spoofingDetection.md)
 7. [Voice Recorder](docs/voiceRecorder/voiceRecorder.md)
-8. [Keypress Detection](docs/keypressDetection/keypressDetection.md)
+8. [Key Press Detection](docs/keypressDetection/keypressDetection.md)
 
 ## Files structure 
 
@@ -37,7 +37,7 @@ From the challenge, I created different functions corresponding with detailed do
 │   │   ├── opticalCharacterRecognition
 │   │   ├── spoofingDetection
 │   │   ├── voiceRecorder
-================ FUNCTION ================
+================ FUNCTIONS ================
 │   ├── eyeBlinking
 │   ├── eyeGazing
 │   ├── headPoseEstimation
@@ -101,6 +101,10 @@ cd keypressDetection
 python main.py
 ```
 
+## Tutorial 
+
+Please watch the explanations and demos of every functions on [this link](https://drive.google.com/file/d/1UD-8bODNWt0yoSA1zVZ5BDGRZOvYmeSm/view?usp=sharing).
+
 ## Appendix
 
 - [Proctortrack: World's most advanced AI-based online proctoring solution
@@ -120,4 +124,4 @@ Please see LICENSE for details.
 
 ## Contact 
 
-Please contact me through lenam1072004@gmail.com
+If you have any question, please contact me through lenam1072004@gmail.com.

@@ -13,21 +13,21 @@ Recognise whenever they do that.
 
 ## How-to-do 
 
-### Step 1: 
+### Step 1
 
 Use the dlib library to detect 68 different landmarks on the candidates face. 
 
 ![Facial_Landmarks](68_facial_landmarks.png)
 
-### Step 2: 
+### Step 2
 
 Take every frame from the camera, flip it, turn it into gray color, then use the detector from the dlib library to detect faces.
 
-### Step 3: 
+### Step 3 
 
 For every face, take the landmarks from these faces.
 
-### Step 4: 
+### Step 4 
  
 Calculate the gaze ratio by taking these steps sequentially. 
 
@@ -51,7 +51,7 @@ Calculate the gaze ratio by taking these steps sequentially.
 | Left and Right | 0.6 and 1.3 |    
 | Upper          | 0.5         |   
 
-## Potential problems: 
+## Potential problems
 
 During the test, there are still potential problems that I can't solve yet. 
 - Apples of the eyes are abstract. 
@@ -60,6 +60,6 @@ During the test, there are still potential problems that I can't solve yet.
 - The screen was put in different angles. (During the test, I found that the results may change a bit when changing the angles of the camera).
 
 
-## Suggested Solutions: 
+## Suggested Solutions 
 - Force the candidates to put the optimal conditions.
 - Make other algorithms to solve the problem.

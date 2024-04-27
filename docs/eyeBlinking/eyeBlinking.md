@@ -1,28 +1,28 @@
 # Eye Blinking 
 
-## Problem: 
+## Problem
 Candidates may close there eyes during the test, we can measure it to decide the abnormal behaviors. 
 
 ## Solution: 
 Recognize whenever they do that.
 
-## How-to-do:
+## How-to-do
 
-### Step 1: 
+### Step 1 
 
 Use the dlib library to detect 68 different landmarks on the candidates face. 
 
 ![Facial_Landmarks](68_facial_landmarks.png)
 
-### Step 2: 
+### Step 2
 
 Take every frame from the camera, flip it, turn it into gray color, then use the detector from the dlib library to detect faces.
 
-### Step 3: 
+### Step 3 
 
 For every face, take the landmarks from these faces.
 
-### Step 4: 
+### Step 4 
 
 To measure whether the candidates look up/down, we need to calculate the relationship between the closing and opening activities. 
 

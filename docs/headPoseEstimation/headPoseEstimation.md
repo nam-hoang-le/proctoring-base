@@ -1,14 +1,14 @@
 # Head Pose Estimation
 
-## Problem:
+## Problem
 
 Candidates may move their heads around while taking the test.
 
-## Solution:
+## Solution
 
 Recognise whenever they did that. 
 
-## How-to-do:
+## How-to-do
 
 **Step 1:** Take the face mesh from the Mediapipe library. Face mesh is our face with multiple points on that. 
 
@@ -49,7 +49,7 @@ In Mediapipe, the face mesh returned back will contain 468 points in total sprea
 | -15   | smaller      | smaller      | Out screen |
 
  
-## Reference: 
+## Reference
 
 - [Camera Calibration and 3D Reconstruction](https://docs.opencv.org/4.x/d9/d0c/group__calib3d.html)
 
