@@ -1,5 +1,6 @@
 import cv2
 import pytesseract
+import time
 # =============================
 font = cv2.FONT_HERSHEY_PLAIN
 # =============================
@@ -16,6 +17,11 @@ img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 # ----------------- Read Vietnamese lang text ----------------
 text = pytesseract.image_to_string(img, lang='vie')
 
+# ------------------------ Set the file names ----------------------------
+timeNow = time.time()
+timeNow = str(timeNow).split('.')
+timeNow = timeNow[0] + timeNow[1]
+
 # -------------------- Write it into different files -----------------
-with open("data/text.txt", 'a', encoding='utf-8') as f:
+with open(f"information/{timeNow}.txt", 'a', encoding='utf-8') as f:
     f.writelines(text)

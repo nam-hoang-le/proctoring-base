@@ -1,5 +1,6 @@
 import cv2
 import pytesseract
+import time
 # =============================
 font = cv2.FONT_HERSHEY_PLAIN
 # =============================
@@ -16,6 +17,9 @@ img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 # ---------------- Use pytesseract library to take information from the image ----------------
 boxes = pytesseract.image_to_data(img)
 
+# ---------------- Store all the words ----------------
+fullText = []
+
 # ------------------ Run through every line in the information -------------------------
 for idx, line in enumerate(boxes.splitlines()):
     # ------------------------ Remove the first line ---------------------
@@ -26,14 +30,14 @@ for idx, line in enumerate(boxes.splitlines()):
         if len(info) == 12:
             # ------------------- Take the information ------------------------
             x, y, w, h, text = int(info[6]), int(info[7]), int(info[8]), int(info[9]), info[11]
+            fullText.append(text)
 
-            # ----------------------- Draw a rectangle and text ----------------------
-            cv2.rectangle(img, (x, y), (x + w, y + h), (0, 0, 255), 2)
-            cv2.putText(img, text, (x, y), font, 1, (255, 0, 0), 2)
+# ------------------------ Set the file names ----------------------------
+timeNow = time.time()
+timeNow = str(timeNow).split('.')
+timeNow = timeNow[0] + timeNow[1]
 
-# ---------------------- Show the image ----------------------
-cv2.imshow("Frame", img)
-# ---------------------- Close the window ----------------
-key = cv2.waitKey(0)
-if key == 27:
-    cv2.destroyAllWindows()
+# -------------------- Write it into different files -----------------
+with open(f"information/{timeNow}.txt", 'a', encoding='utf-8') as f:
+    for text in fullText:
+        f.writelines(text + ' ')
